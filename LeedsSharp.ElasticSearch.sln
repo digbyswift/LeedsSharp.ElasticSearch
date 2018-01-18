@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "LeedsSharp.ElasticSearch.UI", "LeedsSharp.ElasticSearch.UI\", "{A6DD9CA4-A052-47BB-B7B0-4F9BDC7F0878}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_65459"
+		Debug.AspNetCompiler.PhysicalPath = "LeedsSharp.ElasticSearch.UI\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_65459\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_65459"
+		Release.AspNetCompiler.PhysicalPath = "LeedsSharp.ElasticSearch.UI\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_65459\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "65459"
+		SlnRelativePath = "LeedsSharp.ElasticSearch.UI\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeedsSharp.ElasticSearch.IndexRunner", "LeedsSharp.ElasticSearch.IndexRunner\LeedsSharp.ElasticSearch.IndexRunner.csproj", "{88613961-5154-44B7-B62E-88F28B586F73}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6DD9CA4-A052-47BB-B7B0-4F9BDC7F0878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6DD9CA4-A052-47BB-B7B0-4F9BDC7F0878}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6DD9CA4-A052-47BB-B7B0-4F9BDC7F0878}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6DD9CA4-A052-47BB-B7B0-4F9BDC7F0878}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{88613961-5154-44B7-B62E-88F28B586F73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88613961-5154-44B7-B62E-88F28B586F73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88613961-5154-44B7-B62E-88F28B586F73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88613961-5154-44B7-B62E-88F28B586F73}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {78A4E273-56D1-472C-BF74-30381F075D47}
+	EndGlobalSection
+EndGlobal
