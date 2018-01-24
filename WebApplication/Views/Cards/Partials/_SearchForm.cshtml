@@ -1,0 +1,20 @@
+﻿@model LeedsSharp.ElasticSearch.UI.Models.CardSearchModel
+
+@using (Html.BeginForm())
+{
+	@Html.LabelFor(x => x.Query)
+	@Html.TextBoxFor(x => x.Query, new { @class = "" })
+
+	@Html.LabelFor(x => x.UserId)
+	@Html.DropDownListFor(x => x.UserId, Model.UserIdList, "", new { @class = "" })
+
+	@Html.LabelFor(x => x.FollowerMinimum)
+	@Html.TextBoxFor(x => x.FollowerMinimum, new { @class = "" })
+
+	@Html.LabelFor(x => x.Distance, "Distance from here (km)")
+	@Html.TextBoxFor(x => x.Distance, new { @class = "" })
+	@Html.Hidden(nameof(Model.Latitude), "53.7949683", new { @class = "" })
+	@Html.Hidden(nameof(Model.Longitude), "-1.5468427", new { @class = "" })
+
+	<input type="submit" value="Search" />
+}

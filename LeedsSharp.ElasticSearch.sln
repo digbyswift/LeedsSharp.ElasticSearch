@@ -3,31 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "LeedsSharp.ElasticSearch.UI", "LeedsSharp.ElasticSearch.UI\", "{A6DD9CA4-A052-47BB-B7B0-4F9BDC7F0878}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.2"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_65459"
-		Debug.AspNetCompiler.PhysicalPath = "LeedsSharp.ElasticSearch.UI\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_65459\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_65459"
-		Release.AspNetCompiler.PhysicalPath = "LeedsSharp.ElasticSearch.UI\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_65459\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "65459"
-		SlnRelativePath = "LeedsSharp.ElasticSearch.UI\"
-		DefaultWebSiteLanguage = "Visual C#"
-	EndProjectSection
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeedsSharp.ElasticSearch.IndexRunner", "LeedsSharp.ElasticSearch.IndexRunner\LeedsSharp.ElasticSearch.IndexRunner.csproj", "{88613961-5154-44B7-B62E-88F28B586F73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeedsSharp.ElasticSearch.IndexRunner", "LeedsSharp.ElasticSearch.IndexRunner\LeedsSharp.ElasticSearch.IndexRunner.csproj", "{88613961-5154-44B7-B62E-88F28B586F73}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeedsSharp.ElasticSearch.Common", "LeedsSharp.ElasticSearch.Common\LeedsSharp.ElasticSearch.Common.csproj", "{37C8EA7C-E177-4F68-A88B-5C9133492728}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeedsSharp.ElasticSearch.Common", "LeedsSharp.ElasticSearch.Common\LeedsSharp.ElasticSearch.Common.csproj", "{BAA4F5BF-725E-458D-AC3E-EF460E68DFB6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeedsSharp.ElasticSearch.UI", "WebApplication\LeedsSharp.ElasticSearch.UI.csproj", "{09CD513F-BA98-4A3C-8E76-55FE2E73DBDD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,18 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A6DD9CA4-A052-47BB-B7B0-4F9BDC7F0878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A6DD9CA4-A052-47BB-B7B0-4F9BDC7F0878}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A6DD9CA4-A052-47BB-B7B0-4F9BDC7F0878}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{A6DD9CA4-A052-47BB-B7B0-4F9BDC7F0878}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{88613961-5154-44B7-B62E-88F28B586F73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{88613961-5154-44B7-B62E-88F28B586F73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88613961-5154-44B7-B62E-88F28B586F73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88613961-5154-44B7-B62E-88F28B586F73}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BAA4F5BF-725E-458D-AC3E-EF460E68DFB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BAA4F5BF-725E-458D-AC3E-EF460E68DFB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BAA4F5BF-725E-458D-AC3E-EF460E68DFB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BAA4F5BF-725E-458D-AC3E-EF460E68DFB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37C8EA7C-E177-4F68-A88B-5C9133492728}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37C8EA7C-E177-4F68-A88B-5C9133492728}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37C8EA7C-E177-4F68-A88B-5C9133492728}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37C8EA7C-E177-4F68-A88B-5C9133492728}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09CD513F-BA98-4A3C-8E76-55FE2E73DBDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09CD513F-BA98-4A3C-8E76-55FE2E73DBDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09CD513F-BA98-4A3C-8E76-55FE2E73DBDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09CD513F-BA98-4A3C-8E76-55FE2E73DBDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

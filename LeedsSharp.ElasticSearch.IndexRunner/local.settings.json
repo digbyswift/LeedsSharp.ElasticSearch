@@ -1,7 +1,13 @@
 {
-    "IsEncrypted": false,
-    "Values": {
-        "AzureWebJobsStorage": "UseDevelopmentStorage=true",
-        "AzureWebJobsDashboard": "UseDevelopmentStorage=true"
-    }
+	"IsEncrypted": false,
+	"Values": {
+		"AzureWebJobsStorage": "UseDevelopmentStorage=true",
+		"ElasticSearch.HostUrl": "http://127.0.0.1:9200",
+		"ElasticSearch.Username": "elastic",
+		"ElasticSearch.Password": "changeme",
+		"Azure.Queues.IndexingLocationsQueueName": "leedssharp"
+	},
+	"ConnectionStrings": {
+		"Default": "Server=.;database=LeedsSharp.ElasticSearch;User ID=leedssharpuser;Password=leedssharp;app=leedssharp;"
+	}
 }
