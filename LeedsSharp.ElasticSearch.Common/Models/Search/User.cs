@@ -12,7 +12,7 @@ namespace LeedsSharp.ElasticSearch.Common.Models.Search
 
 		public string DisplayName { get; set; }
 
-		[Keyword]
+		[Keyword(Store = true)]
 		public string SortableName { get; set; }
 
 		[Keyword]

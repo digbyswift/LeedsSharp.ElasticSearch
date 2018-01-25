@@ -26,14 +26,14 @@ namespace LeedsSharp.ElasticSearch.Common.Services
 				    .MinScore(0.15)
 				    .TrackScores();
 		    }
-		    else
-		    {
-			    descriptor = descriptor.Sort(s =>
-				    s.Descending(x => x.SortableName)
-			    );
-		    }
+			else
+			{
+				descriptor = descriptor.Sort(s =>
+					s.Descending(x => x.SortableName)
+				);
+			}
 
-		    descriptor = descriptor.WriteToLog();
+			descriptor = descriptor.WriteToLog();
 
 		    return await SearchClient.SearchAsync<User>(descriptor);
 	    }
@@ -46,9 +46,9 @@ namespace LeedsSharp.ElasticSearch.Common.Services
 				    .Field(f => f.Id)
 				    .Field(f => f.DisplayName))
 				)
-			    .Sort(s =>
-				    s.Ascending(x => x.SortableName)
-			    )
+				.Sort(s =>
+					s.Descending(x => x.SortableName)
+				)
 			    .WriteToLog();
 
 		    return await SearchClient.SearchAsync<User>(descriptor);

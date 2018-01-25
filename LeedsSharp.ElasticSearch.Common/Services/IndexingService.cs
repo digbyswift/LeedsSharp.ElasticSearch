@@ -27,9 +27,9 @@ namespace LeedsSharp.ElasticSearch.Common.Services
 			}
 			else
 			{
-				Parallel.ForEach(items, async (x, y) =>
+				Parallel.ForEach(items, (x, y) =>
 				{
-					await ElasticClient.IndexAsync(x, d => d.Index("user"));
+					ElasticClient.Index(x, d => d.Index("user"));
 				});
 			}
 		}

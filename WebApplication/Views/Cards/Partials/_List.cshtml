@@ -1,17 +1,40 @@
 ﻿@model IEnumerable<LeedsSharp.ElasticSearch.Common.Models.Search.User>
-	
-<ul>
-	@foreach (var user in Model.OrderByDescending(x => x.SocialChannels.Max(s => s.Followers)))
-	{
-		<li>
-			@user.DisplayName
 
-			<ul>
-				@foreach (var channel in user.SocialChannels.OrderByDescending(x => x.Followers))
-				{
-					<li>@channel.Name - @channel.Url - @channel.Followers.ToString("N0")</li>
-				}
-			</ul>
-		</li>
-	}
-</ul>
+<div class="container-fluid">
+
+	<div class="row">
+
+		@foreach (var user in Model.OrderByDescending(x => x.SocialChannels.Max(s => s.Followers)))
+		{
+			<div class="col-md-3">
+
+				<div class="card" style="width: 18rem;">
+					<div class="card-body">
+						<h3 class="card-title">@user.DisplayName</h3>
+
+						<p>
+							@foreach (var channel in user.SocialChannels.OrderByDescending(x => x.Followers))
+							{
+								<b>@channel.Name</b><br />
+								<small>@channel.Url.Replace("https://", "").Replace("www.", "")</small><br />
+								@channel.Followers.ToString("N0")<br /><br />
+							}
+						</p>
+
+						<h5>Attributes</h5>
+
+						<ul class="card-text">
+							@foreach (var attribute in user.Attributes.OrderBy(x => x.Key))
+							{
+								<li>@attribute.Key - @attribute.Value</li>
+							}
+						</ul>
+
+					</div>
+				</div>
+
+			</div>
+		}
+
+	</div>
+</div>

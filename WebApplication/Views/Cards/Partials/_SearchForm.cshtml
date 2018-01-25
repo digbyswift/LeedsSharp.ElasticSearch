@@ -1,20 +1,31 @@
 ﻿@model LeedsSharp.ElasticSearch.UI.Models.CardSearchModel
 
-@using (Html.BeginForm())
-{
-	@Html.LabelFor(x => x.Query)
-	@Html.TextBoxFor(x => x.Query, new { @class = "" })
+<div class="row">
+	<div class="col-lg-12">
+		
+		<div class="form-row">
 
-	@Html.LabelFor(x => x.UserId)
-	@Html.DropDownListFor(x => x.UserId, Model.UserIdList, "", new { @class = "" })
+			@using (Html.BeginForm(null, null, FormMethod.Get, new { @class= "form-inline" }))
+			{
+				@Html.LabelFor(x => x.Query)
+				@Html.TextBoxFor(x => x.Query, new { @class = "form-control" })
 
-	@Html.LabelFor(x => x.FollowerMinimum)
-	@Html.TextBoxFor(x => x.FollowerMinimum, new { @class = "" })
+				@Html.LabelFor(x => x.UserId)
+				@Html.DropDownListFor(x => x.UserId, Model.UserIdList, "", new { @class = "form-control" })
 
-	@Html.LabelFor(x => x.Distance, "Distance from here (km)")
-	@Html.TextBoxFor(x => x.Distance, new { @class = "" })
-	@Html.Hidden(nameof(Model.Latitude), "53.7949683", new { @class = "" })
-	@Html.Hidden(nameof(Model.Longitude), "-1.5468427", new { @class = "" })
+				@Html.LabelFor(x => x.FollowerMinimum)
+				@Html.TextBoxFor(x => x.FollowerMinimum, new { @class = "form-control" })
 
-	<input type="submit" value="Search" />
-}
+				@Html.LabelFor(x => x.Distance, "Distance from here (km)")
+				@Html.TextBoxFor(x => x.Distance, new { @class = "form-control" })
+				@Html.Hidden(nameof(Model.Latitude), "53.7949683", new { @class = "" })
+				@Html.Hidden(nameof(Model.Longitude), "-1.5468427", new { @class = "" })
+
+				<input type="submit" value="Search" class="btn btn-primary" />
+			}
+
+		</div>
+
+	</div>
+</div>
+
